@@ -17,14 +17,14 @@ provides:
   commands:
     - name: "speckit.plan-review.request"
       file: "commands/request.md"
-      description: "Request a review of spec.md and plan.md before proceeding to task generation"
+      description: "Create a merge request for spec.md and plan.md before proceeding to task generation"
       aliases: ["speckit.plan-review"]
 
 hooks:
   after_plan:
     command: "speckit.plan-review.request"
     optional: false
-    description: "Require plan review before proceeding to task generation"
+    description: "Require a merge request before proceeding to task generation"
 
 tags:
   - "review"
