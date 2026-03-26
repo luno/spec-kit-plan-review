@@ -35,13 +35,18 @@ The extension registers a mandatory `before_tasks` hook. When `/speckit.tasks` r
 3. If either file is new or has uncommitted changes — **blocks task generation**
 4. If both files are merged and clean — **allows task generation to proceed**
 
-There is no skip option. The gate is based on git state, not user confirmation.
+To bypass the gate, pass `--skip-review` to `/speckit.tasks`.
 
 ## Hooks
 
 | Hook          | Type      | Behaviour                                                        |
 |---------------|-----------|------------------------------------------------------------------|
 | before_tasks  | Mandatory | Blocks `/speckit.tasks` unless spec.md and plan.md are merged    |
+
+## Links
+
+- [Spec Kit](https://github.com/github/spec-kit/) — the Spec-Driven Development framework this extension plugs into
+- [Extensions catalog](https://github.com/github/spec-kit/tree/main/extensions) — browse all available Spec Kit extensions
 
 ## License
 
