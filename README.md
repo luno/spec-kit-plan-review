@@ -1,6 +1,6 @@
-# spec-kit-plan-review
+# spec-kit-plan-review-gate
 
-Spec Kit extension for requiring a plan to be reviewed before proceeding with `/speckit.tasks`.
+Spec Kit extension for requiring a merge request before proceeding with `/speckit.tasks`.
 
 ## What It Does
 
@@ -16,14 +16,14 @@ When `/speckit.tasks` is invoked, this extension runs a mandatory `before_tasks`
 ## Installation
 
 ```bash
-specify extension add plan-review --from https://github.com/luno/spec-kit-plan-review/archive/refs/heads/main.zip
+specify extension add plan-review-gate --from https://github.com/luno/spec-kit-plan-review-gate/archive/refs/heads/main.zip
 ```
 
 Or install from a local clone:
 
 ```bash
-git clone https://github.com/luno/spec-kit-plan-review.git
-specify extension add plan-review --dev ./spec-kit-plan-review
+git clone https://github.com/luno/spec-kit-plan-review-gate.git
+specify extension add plan-review-gate --dev ./spec-kit-plan-review-gate
 ```
 
 ## How It Works
